@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+*,
+*::before,
+*::after {
+  box-sizing:border-box;
+}
+h1{
+    font-size: 100px;
+    margin: 0;
+    padding: 5px;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.7;
+	color: #fff;
+    background-color: #222;
+    margin: 0;
+    padding: 0;
+    overflow-x: none;
+}
+p{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.7;
+	color: black;
+    text-align: center;
+  margin: 0;
+}
+/* 메인 틀 */
+.section-fluid-main{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  padding: 100px 0;
+}
+/* 행 정보 */
+.section-row{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+/* 양 옆의 이미지 보이기 정도 */
+.section-row:hover .section-col{
+  opacity: 0.1;
+}
+/* 열 정보 */
+.section-col{
+  position: relative;
+  width: 100%;
+  height: 80%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  transition: opacity 250ms linear;
+}
+
+/*선택한 열 보이는 정도*/
+.section-row .section-col:hover{
+  opacity: 1;
+}
+
+.section{
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 15px;
+}
+.section-in{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 100px;
+  cursor: pointer;  
+  margin: 0;
+}
+.section-in img{
+  display:block;
+  background-color: rgb(88, 87, 87);
+  width: 100%;
+  height: 100%;
+  transition: transform 250ms linear;
+}
+.section-col:hover .section-in img{
+  transform: scale(1.1) rotate(-3deg);
+}
+
+.hover-text{
+  position: fixed;
+  margin: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 100;
+  pointer-events: none;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display:inline;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  text-align: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+  mix-blend-mode: difference;
+}
+.hover-text h2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 8vw;
+  line-height: 1;
+  color: #fff;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: transform 250ms linear, opacity 250ms ease;
+}
+.section-col:hover + .hover-text h2{
+  opacity: 1;
+  transform: scale(1);
+}
+.modal {
+    display: none; /* Hidden by default */
+    position:absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 50px;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow:hidden; /* Enable scroll if needed */
+    background-color: #222; /* Fallback color */
+    background-color: #222; /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 20%;
+    bottom:10%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 60% ; /* Could be more or less, depending on screen size */
+    height: 45%;
+    border-radius: 10%;
+}
+/* The Close Button */
+.close {
+    color: #aaa;
+    float:right;
+    font-size: 30px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
