@@ -1,0 +1,132 @@
+body {
+  background-color: #888;
+}
+
+.center {
+  text-align: center;
+  color: white;
+}
+
+#field {
+  width: 800px;
+  height: 400px;
+}
+
+legend {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+label {
+  cursor: pointer;
+  font-size: 1em;
+  color: white;
+
+}
+
+a input {
+   visibility: hidden;
+}
+
+#morning {
+  display: flex;
+  color: white;
+  justify-content : center;
+  font-size: 1.2em;
+  
+}
+
+#wake{
+  border-bottom: solid 2px black;
+  width: flex;
+  cursor: pointer;
+}
+#apply{
+  border-bottom: solid 2px black;
+  width: flex;
+}
+
+.plusmin {
+  width: 150px;
+  margin-left: 15%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.study {
+  margin-left: 15%;
+  color: white;
+  font-size: 15px;
+}
+
+.minusmin {
+  margin-left: 15%;
+  color: white;
+  font-size: 15px;
+
+}
+#list img {
+  max-width: 300px;
+}
+
+#deleteImgs {
+  display:block;
+  text-align: center;
+  font-size: 40px;
+}
+.thumb{
+  margin-left: 42%;
+  margin-top: 20px;
+}
+
+ /*업로드박스*/
+.filebox label { 
+  display: inline-block;
+	padding: .5em .75em;
+	color: #999;
+	font-size: inherit;
+	line-height: normal;
+	vertical-align: middle;
+	background-color: #fdfdfd;
+	cursor: pointer;
+	border: 1px solid #ebebeb;
+	border-bottom-color: #e2e2e2;
+	border-radius: .25em;
+  margin-top: 15px;
+  margin-;
+ } 
+
+.filebox input[type="file"] { /* 파일 필드 숨기기 */
+  position: absolute; 
+  width: 1px; height: 1px; 
+  padding: 0; margin: -1px; 
+  overflow: hidden; 
+  clip:rect(0,0,0,0); 
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ /*파일선택 필드*/
+.filebox .upload-name { 
+  display: inline-block; 
+  padding: .5em .75em; /* label의 패딩값과 일치 */ 
+  font-size: inherit; 
+  font-family: inherit; 
+  line-height: normal; 
+  vertical-align: middle; 
+  background-color: #ffffff; 
+  border: 1px solid #ebebeb; 
+  border-bottom-color: #e2e2e2; 
+  border-radius: .25em; 
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */ 
+  -moz-appearance: none; 
+  appearance: none;
+  margin-left: 42%;
+  margin-right: 10% auto;
+  margin-top: 15px;
+ }
+
+

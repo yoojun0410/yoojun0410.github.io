@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+<meta charset='utf-8'>
+<title>기상하기 챌린지</title>
+
+
+<link rel="stylesheet" href="pro_style.css">
+</head>
+
+<body>
+<br/>
+<h1 class=center></h1><br/>
+<h2 class=center></h2>
+<h3 class=center></h3>
+<br/>
+
+<div id='morning'>
+<p id='wake'>기상 시간 : 여기를 클릭해 기상 시간을 입력하세요!</p>
+</div>
+<div id='morning'>
+    <p id='apply'>사진을 통해 인증하세요!</p>
+</div>
+<div class="filebox">
+<input class="upload-name" value="인증사진" disabled="disabled">
+<label for="files">업로드</label>
+<input type="file" id="files">
+<div id="list">
+</div>
+<a href="#" id="deleteImgs">사진 삭제</a>
+</div> 
+
+<span class='btn' id='pre'>
+<img src='image/prev.png' alt='prev' width='70px'
+style='float: left;'>
+<a href='#'><input type='button'></a>
+</span>
+
+<span class='btn' id='next'>
+<img src='image/next.png' alt='next' width='70px'
+style='float: right;'>
+<a href='#'><input type='button'></a>
+</span> 
+
+<script src='pro_script1.js'></script>
+</body>
+</html>
